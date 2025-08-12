@@ -1,0 +1,26 @@
+.header {
+  background-color: #12112e;
+}
+.navbar {
+  padding: 20px 0;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  gap: 60px;
+}
+.link {
+  color: #ffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.link:hover {
+  color: #0048ff;
+}
