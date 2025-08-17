@@ -4,11 +4,24 @@
     scroll-behavior: smooth;
   }
 
+  html,
   body {
-    background-color: #20293e;
+    background-image: url(/bg.png);
+    height: 100%;
   }
-
+  body.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main.content {
+    flex: 1;
+  }
   * {
     box-sizing: border-box;
+  }
+  button,
+  a {
+    cursor: pointer;
   }
 }

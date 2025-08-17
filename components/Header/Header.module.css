@@ -1,5 +1,6 @@
 .header {
-  background-color: #12112e;
+  padding-inline: 20px;
+  position: relative;
 }
 .navbar {
   padding: 20px 0;
@@ -15,12 +16,105 @@
   gap: 60px;
 }
 .link {
-  color: #ffff;
-  font-size: 14px;
+  color: #fff;
+  font-size: 12px;
   cursor: pointer;
   transition: 0.3s;
   font-weight: 500;
+  font-family: var(--font-montserrat), sans-serif;
 }
 .link:hover {
-  color: #0048ff;
+  color: #45a29e;
+}
+
+.box {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  z-index: 3;
+}
+
+.hamburgerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hamburgerInner,
+.hamburgerInner::before,
+.hamburgerInner::after {
+  display: block;
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: #45a29e;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.hamburgerInner::before,
+.hamburgerInner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburgerInner::before {
+  top: -8px;
+}
+
+.hamburgerInner::after {
+  top: 8px;
+}
+
+.hamburger.isActive .hamburgerInner {
+  transform: rotate(45deg);
+}
+.hamburger.isActive .hamburgerInner::before {
+  top: 0;
+  opacity: 0;
+}
+.hamburger.isActive .hamburgerInner::after {
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 680px) {
+  .list {
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: #070422;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 200px;
+
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+  }
+
+  .list.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .box {
+    display: block;
+  }
 }
