@@ -24,4 +24,10 @@
   a {
     cursor: pointer;
   }
+  @font-face {
+    font-family: "Wattauchimma";
+    src: url("/fonts/Wattauchimma.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+  }
 }
