@@ -26,47 +26,32 @@ export const Skills = () => {
           </p>
         </div>
         <div className={style.skills__cards}>
-          <Tilt
-            {...tiltOptions}
-            className={`${style.skills__card} ${style.frontend}`}
-          >
-            <h1 className={style.skills__card__title}>Frontend</h1>
-            <ul className={style.skills__card__list}>
-              <li>React, Next.js</li>
-              <li>TypeScript, JavaScript</li>
-              <li>Tailwind CSS, SCSS</li>
-              <li>Redux, Zustand</li>
-              <li>Адаптивная верстка</li>
-            </ul>
-          </Tilt>
+          <h1 className={style.skills__card__title}>Frontend</h1>
+          <ul className={style.skills__card__list}>
+            <li>React, Next.js</li>
+            <li>TypeScript, JavaScript</li>
+            <li>Tailwind CSS, SCSS</li>
+            <li>Redux, Zustand</li>
+            <li>Адаптивная верстка</li>
+          </ul>
 
-          <Tilt
-            {...tiltOptions}
-            className={`${style.skills__card} ${style.backend}`}
-          >
-            <h1 className={style.skills__card__title}>Backend</h1>
-            <ul className={style.skills__card__list}>
-              <li>Node.js, Express</li>
-              <li>PostgreSQL, MongoDB</li>
-              <li>REST, GraphQL</li>
-              <li>JWT, OAuth</li>
-              <li>Docker, CI/CD</li>
-            </ul>
-          </Tilt>
+          <h1 className={style.skills__card__title}>Backend</h1>
+          <ul className={style.skills__card__list}>
+            <li>Node.js, Express</li>
+            <li>PostgreSQL, MongoDB</li>
+            <li>REST, GraphQL</li>
+            <li>JWT, OAuth</li>
+            <li>Docker, CI/CD</li>
+          </ul>
 
-          <Tilt
-            {...tiltOptions}
-            className={`${style.skills__card} ${style.uiux}`}
-          >
-            <h1 className={style.skills__card__title}>UI/UX & Дизайн</h1>
-            <ul className={style.skills__card__list}>
-              <li>Figma, Adobe XD</li>
-              <li>Wireframing & Prototyping</li>
-              <li>Design Systems</li>
-              <li>Анимации и микровзаимодействия</li>
-              <li>UX-исследования</li>
-            </ul>
-          </Tilt>
+          <h1 className={style.skills__card__title}>UI/UX & Дизайн</h1>
+          <ul className={style.skills__card__list}>
+            <li>Figma, Adobe XD</li>
+            <li>Wireframing & Prototyping</li>
+            <li>Design Systems</li>
+            <li>Анимации и микровзаимодействия</li>
+            <li>UX-исследования</li>
+          </ul>
         </div>
       </div>
     </section>

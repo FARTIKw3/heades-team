@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./Header.module.css";
+import stylse from "./Header.module.css";
 import { headerData } from "./HeaderData";
 
 export const Header = () => {
