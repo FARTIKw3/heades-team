@@ -42,7 +42,10 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-            <Link href="/" className={style.contact__socialLink}>
+            <Link
+              href="http://t.me/FEEEE45"
+              className={style.contact__socialLink}
+            >
               <div className={style.contact__icon}>
                 <div className={style.contact__border}>
                   <div className={style.contact__gmail}>
@@ -83,62 +86,70 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form className={style.contact__form}>
-          <div className={style.contact__formRow}>
-            <div className={style.contact__formGroup}>
-              <label className={style.contact__label} htmlFor="name">
-                Имя
-              </label>
-              <input
-                className={style.contact__input}
-                placeholder="Ваше имя"
-                type="text"
-                id="name"
-              />
-            </div>
-            <div className={style.contact__formGroup}>
-              <label className={style.contact__label} htmlFor="email">
-                Email
-              </label>
-              <input
-                className={style.contact__input}
-                placeholder="Ваш email"
-                type="text"
-                id="email"
-              />
-            </div>
-          </div>
-
-          <div className={style.contact__formGroup}>
-            <label className={style.contact__label} htmlFor="message">
-              Сообщение
-            </label>
-            <textarea
-              className={style.contact__textarea}
-              placeholder="Введите сообщение"
-              id="message"
-            ></textarea>
-          </div>
-        </form>
-
-        <button className={style.contact__button}>Отправить сообщение</button>
-
-        <div className={style.contact__bottom}>
-          <div className={style.contact__card}>
-            <div className={style.contact__cardHeader}>
-              <div className={style.contact__cardIcon}>
-                <span></span>
+        <div>
+          <form className={style.contact__form}>
+            <div className={style.contact__formRow}>
+              <div className={style.contact__formGroup}>
+                <label className={style.contact__label} htmlFor="name">
+                  Имя
+                </label>
+                <div className={style.contact__inputGradient}>
+                  <input
+                    className={style.contact__input}
+                    placeholder="Ваше имя"
+                    type="text"
+                    id="name"
+                  />
+                </div>
               </div>
-              <div className={style.contact__cardTitle}>
-                <h3>Готовы к сотрудничеству</h3>
+              <div className={style.contact__formGroup}>
+                <label className={style.contact__label} htmlFor="email">
+                  Почта
+                </label>
+                <div className={style.contact__inputGradient}>
+                  <input
+                    className={style.contact__input}
+                    placeholder="Ваш email"
+                    type="text"
+                    id="email"
+                  />
+                </div>
               </div>
             </div>
-            <p className={style.contact__cardText}>
-              Команда Heades-team открыта к новым проектам. Мы разрабатываем
-              лендинги, интерфейсы и сложные веб-системы. В нашей команде —
-              фронтенд и бэкенд разработчики, дизайнеры и техлиды. Работаем с
-              вниманием к деталям и вовлечённостью.
-            </p>
+
+            <div className={style.contact__formGroupText}>
+              <label className={style.contact__label} htmlFor="message">
+                Сообщение
+              </label>
+              <div className={style.contact__inputGradient}>
+                <textarea
+                  className={style.contact__textarea}
+                  placeholder="Введите сообщение"
+                  id="message"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+
+          <button className={style.contact__button}>Отправить сообщение</button>
+
+          <div className={style.contact__bottom}>
+            <div className={style.contact__card}>
+              <div className={style.contact__cardHeader}>
+                <div className={style.contact__cardIcon}>
+                  <div className={style.contact__circle}></div>
+                </div>
+                <div className={style.contact__cardTitle}>
+                  <h3>Готовы к сотрудничеству</h3>
+                </div>
+              </div>
+              <p className={style.contact__cardText}>
+                Команда Heades-team открыта к новым проектам. Мы разрабатываем
+                лендинги, интерфейсы и сложные веб-системы. В нашей команде —
+                фронтенд и бэкенд разработчики, дизайнеры и техлиды. Работаем с
+                вниманием к деталям и вовлечённостью.
+              </p>
+            </div>
           </div>
         </div>
       </div>
