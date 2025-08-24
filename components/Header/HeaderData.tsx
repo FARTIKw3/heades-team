@@ -9,19 +9,11 @@ export const headerData: headerDataInterface[] = [
     href: "/",
   },
   {
+    link: "Услуги",
+    href: "/",
+  },
+  {
     link: "О нас",
-    href: "/",
-  },
-  {
-    link: "Навыки",
-    href: "/",
-  },
-  {
-    link: "Проекты",
-    href: "/",
-  },
-  {
-    link: "Контакты",
     href: "/",
   },
 ];

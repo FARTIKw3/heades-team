@@ -16,6 +16,7 @@
     "react-dom": "19.1.0",
     "react-p5": "^1.4.1",
     "react-parallax-tilt": "^1.7.304",
+    "swiper": "^11.2.10",
     "three": "^0.179.1",
     "vanta": "^0.5.24"
   },
